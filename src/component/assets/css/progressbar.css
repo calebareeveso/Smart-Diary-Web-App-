@@ -1,0 +1,9 @@
+::-moz-selection { /* Code for Firefox */
+  font-style: italic;
+  background:white;
+ }
+ 
+ ::selection {
+   font-style: italic;
+   background:white;
+ }

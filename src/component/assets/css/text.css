@@ -1,0 +1,190 @@
+/* General typo */
+.fadeblue {
+    color: #32AEE3;
+}
+.dblue {
+    color: #32AEE3;
+}
+.blue {
+    color: #2D9CCC;
+}
+.white {
+    color: #FFFFFF;
+}
+.h1 {
+    font-size: 100px;
+    font-weight: normal;
+}
+.h2 {
+    font-size: 50px;
+}
+.num {
+    font-size: 36px;
+}
+.p1 {
+    font-size: 27px;
+}
+.headings {
+    font-size: 50px;
+    font-weight: bold;
+    color: #A3E3FF;
+}
+.subHeadings {
+    font-size: 20px;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+.p {
+    font-size: 36px!important;
+}
+/* about typo  */
+.ap {
+    font-weight: 350;
+    font-size: 35px;
+    color: #FFFFFF;
+    line-height: 61px;
+    padding-top: 0.4em;
+}
+/* how it works typo  */
+
+.hiwp {
+    font-size: 33px;
+    line-height: 43px;
+    letter-spacing: -0.015em;
+    color: #2D9CCC;
+}
+
+.hiwlists {
+    list-style: none;
+}
+      
+.hiwlists li::before {
+    content: "\2022";
+    color:  #32AEE3;
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
+    
+}
+.hiwlists li {
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 43px;
+    letter-spacing: -0.015em;
+    color: #2D9CCC;
+    
+}
+
+
+
+
+
+/* privacy policy  */
+
+.hiwlists1 {
+    list-style: none;
+}
+      
+.hiwlists1 li::before {
+    content: "\2022";
+    color:  #ffffff;
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
+    
+}
+.hiwlists1 li {
+    font-weight: 300;
+    font-size: 25px;
+    line-height: 43px;
+    letter-spacing: -0.015em;
+    color: #ffffff;
+    
+}
+
+
+/* features typo  */
+
+.ftp {
+    font-weight: 350!important;
+    letter-spacing: -0.015em;
+    color: #FFFFFF;
+    font-size: 25px;
+}
+.fth1 {
+    font-weight: 600;
+    letter-spacing: -0.015em;
+    color: #FFFFFF;
+    font-size: 40px;
+    padding-top: 0.5em;
+}
+
+
+
+
+/* PRIVACY POLICY TYPO   */
+.ph1 {
+    font-size: 96px;
+    letter-spacing: -0.015em;
+    font-weight: 350;
+    color: #FFFFFF;
+
+}
+.psub {
+    font-weight: 350;
+    font-size: 35px;
+    letter-spacing: -0.015em;
+    color: #FFFFFF;
+}
+.psub2 {
+    /* font-family: "Rubik"; */
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    color: #FFFFFF;
+}
+.pinfo {
+    font-size: 44px;
+    letter-spacing: -0.015em;
+}
+.plist {
+    font-weight: 350;
+    font-size: 40px;
+    letter-spacing: -0.015em;
+}
+
+
+
+.underlineing {
+    position: relative!important;
+    cursor: pointer;
+  }
+  .underlineing:after, .underlineing:after {
+    bottom: 0px!important;
+    content: ""!important;
+    display: block!important;
+    height: 4px!important;
+    left: 0!important;
+    position: absolute!important;
+    background: #32AEE3!important;
+    transition: width 0.3s ease 0s, opacity 0.3s ease 0s!important;
+    width: 20%!important;
+  }
+  .underlineing:focus:after, .underlineing:hover:after {
+    width: 100%!important;
+  }
+
+  /* progressbar  */
+  .proup {
+      transform: translateY(-5%);
+        font-weight: 600;
+        color: #A3E3FF!important;
+  }
+  .prodown {
+      transform: translateY(5%);
+      font-weight: 600;
+
+  }

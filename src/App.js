@@ -1,26 +1,124 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Component } from 'react';
 import './App.css';
+import Home from './component/home'
+import LogIn from './component/Auth/login'
+import Signup from './component/Auth/sigup'
+import Privacy from './component/privacy'
+import Redirect from './component/redirect'
+import {BrowserRouter as Router, Switch ,Route } from 'react-router-dom';
 
-function App() {
+import Main from './component/main/smartDiary'
+
+// firebase 
+import fire from './config/fire'
+
+class App extends Component {
+
+
+
+
+
+
+
+
+
+
+  constructor() {
+    super();
+    this.state = ({
+      user: null,
+      newroute: null
+    });
+    this.authListener = this.authListener.bind(this);
+    this.getDname = this.getDname.bind(this);
+  }
+
+  componentDidMount() {
+    this.authListener();
+    this.getDname();
+  }
+
+  componentDidUpdate(prevState, prevProps) {
+    return this.state.newroute;
+  }
+
+  
+
+  getDname(){
+    if(localStorage.getItem('DiaryName')){
+        this.setState({
+          newroute: localStorage.getItem('DiaryName'),
+        })
+
+
+    }else{
+      this.setState({
+        newroute: null,
+      })
+    }
+}
+
+
+
+
+  authListener() {
+    fire.auth().onAuthStateChanged((user) => {
+    
+
+      console.log(user);
+      // console.log(user.metadata.creationTime);
+      if (user) {
+        this.setState({ user });
+        localStorage.setItem('user', user.uid);
+        localStorage.setItem('creationTime', user.metadata.creationTime);
+
+
+   
+
+      } else {
+        this.setState({ user: null });
+        localStorage.removeItem('user');
+        localStorage.removeItem('DiaryName');
+        localStorage.removeItem('Name');
+        localStorage.removeItem('creationTime');
+      }
+    });
+  }
+
+
+ render (){
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router>
+      {/* <Nav/>  */}
+     
+       {this.state.user ?
+       <Switch>
+        <Route path ='/diary' exact={true} component={Main} /> 
+        <Route path='/' exact={true} component={Redirect} />
+       <Route path='/login'  component={Redirect} />
+       <Route path='/signup'  component={Redirect} />
+       <Route path='/privacy-policy'  component={Redirect} />
+        {/* Redirect */}
+       </Switch>
+
+       : 
+
+       <Switch>
+       <Route path='/' exact={true} component={Home} />
+       <Route path='/login'  component={LogIn} />
+       <Route path='/signup'  component={Signup} />
+       <Route path='/privacy-policy'  component={Privacy} />
+       </Switch>
+
+       }
+   
+     
+     </Router>
     </div>
   );
 }
+ }
+  
 
 export default App;

@@ -1,0 +1,17 @@
+.authbg {
+   background:#FAFAFA;
+}
+.active {
+   background: rgba(57, 194, 255, 0.49)!important;
+   border-radius: 50%;
+   opacity: 0.5;
+}
+.trans {
+   transition: all 0.5s ease-in-out;
+}
+.herobg {
+   background:#FAFAFA;
+}
+.herobg2 {
+   background: #FAFAFA;
+}

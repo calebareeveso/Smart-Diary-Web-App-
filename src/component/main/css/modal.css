@@ -1,0 +1,12 @@
+.nob {
+    box-shadow: none!important;
+}
+.nob:hover,.nob:focus  {
+    outline: none!important;
+}
+
+
+
+
+
+

@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;1,100;1,200;1,300;1,400&display=swap');
+body{
+    font-family: 'Poppins', sans-serif!important;
+}
+:active, :hover, :focus {
+    outline: 0!important;
+    outline-offset: 0;
+  }
+.white-btn:hover{
+     color: #000!important;
+}
+.white-btn {
+    box-shadow: none!important;
+}
+.pribtn:hover,.pribtn:focus {
+    outline: none!important;
+}
+.pribtn {
+    color: #fff;
+}
+.br {
+    border-radius: 9px!important;
+}
+.py {
+    padding: 0.4em 0.9em!important;
+    font-size: 1.4em!important;
+}
+.py2 {
+    padding: 0.6em 1em!important;
+    font-size: 1.4em!important;
+}
+.noUnderline:hover {
+  text-decoration: none!important;
+}
+
+
+/* special btn  */
+.btn1 {
+    position: relative;
+    display: inline-block;
+    width: auto; height: auto;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    min-width: 150px;
+    padding: 0;
+  }
+    .btn1 span {         
+      position: relative;
+      display: inline-block;
+      font-size: 24px;
+      font-weight: 500;
+      letter-spacing: -0.015em;
+      top: 0; left: 0;
+      width: 100%;
+      padding: 15px 20px;
+      transition: 0.3s;
+
+    }
+  
+/*--- btn-2 ---*/
+
+.btn-2::before {
+    background-color: #32AEE3;
+    transition: 0.3s ease-out;
+    position: absolute;
+    content: "";
+    border-radius: 5px;
+  }
+   
+   /* .btn-2 {
+   
+   } */
+  .btn-2 span {
+    color:#32AEE3;
+    transition: 0.2s;
+  }  
+  .btnc {
+      position: relative;
+  }
+  .btnc::before {
+      content: '';
+    border: 3px solid #32AEE3;
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }  
+  .btn-2 span:hover {
+    color: rgb(255,255,255);
+    transition: 0.1s 0.1s;
+  }
+
+/* 9. hover-slide-right */
+.btn-2.hover-slide-right::before {
+    position: absolute;
+    top: 0; bottom: 0; left: 0; 
+    height: 100%; width: 0%;
+  }
+  .btn-2.hover-slide-right:hover::before {
+    width: 100%;
+  }
+  .btn-2.hover-slide-right:hover span {
+    color: rgb(255,255,255);
+  }
+  .btn-2.hover-slide-right .hshift{
+    transition:transform 0.3s ease-out;
+    font-size: 24px!important;
+   }
+  .btn-2.hover-slide-right:hover span .hshift{
+   transform: translateX(20%);
+  }
+  
+

@@ -1,0 +1,38 @@
+
+
+.fbg {
+    padding: 1.8em;
+    height: 20em;
+    /* background: rgba(57, 194, 255, 0.49); */
+    box-shadow: 0px 0px 7px rgba(255, 255, 255, 0.25);
+    background: inherit;
+
+    border-radius: 19px;
+    margin-bottom: 2em;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.fbg:hover,.fbg:focus {
+   /* box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
+   transform: translateY(-4%); */
+   background: rgba(57, 194, 255, 0.49);
+   box-shadow: 0px 0px 0px rgba(255, 255, 255, 0.25);
+   /* transform: scale(0.9); */
+}
+
+.privcybg {
+    background: linear-gradient(179.48deg, #32AEE3 0.45%, #32AEE3 38.69%, #32AEE3 98.03%);
+}
+
+
+/* background image  */
+.pvimg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pvimage {
+    height: 70vh;
+    width: auto;
+}

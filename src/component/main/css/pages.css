@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;1,100;1,200;1,300;1,400&display=swap');
+
+body{
+    transition: background-color 0.5s ease-in-out;
+    font-family: 'Poppins', sans-serif!important;
+
+}
+
+.activitylogText {
+    font-size: 16px;
+    letter-spacing: -0.015em;
+    padding-top: 1em;
+}
+
+.cusomizebgs {
+    margin: 0.1em;
+    display: inline-block;
+    padding: 5em;
+    border-radius: 5%;
+    border: 1px solid #fff;
+    position: relative!important;
+    box-shadow: 0px 0px 5px rgb(224, 224, 224);
+}
+.cusomizebgs::before {
+    content: " ";
+    background: #fff;
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    right: -1px;
+    top: 50%;
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+}
+.cusheading {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    letter-spacing: -0.015em;
+    color: #dfdfdf;
+    transition: all 0.3s ;
+}
+
+.cusomizebgs:hover,.cusomizebgs:focus {
+    transition: all 0.7s ease-in-out;
+}
+.cusomizebgs:hover {
+    box-shadow: 0px 0px 15px rgb(204, 204, 204);
+}
+
+
+
+@media(max-width:1243px) and (min-width:768px){
+    .cusomizebgs {
+        padding: 4em;
+    }
+}
+
+@media(max-width:768px){
+    .cusheading {
+        font-size: 20px;
+    }
+    .cusomizebgs {
+        padding: 3.5em;
+    }
+}
+@media(max-width:619px){
+    .cusomizebgs {
+        padding: 3em;
+    }
+}
+
+@media(max-width:576px){
+   
+    .cusheading {
+        font-size: 16px;
+    }
+    .cusomizebgs::before {
+        content: " ";
+        background: #fff;
+        position: absolute;
+        bottom: -1px;
+        left: -1px;
+        right: 0px;
+        top: 50%;
+        border-bottom-left-radius: 5%;
+        border-bottom-right-radius: 5%;
+    }
+}
+@media(max-width:334px){
+    .cusomizebgs {
+        padding: 2.5em;
+    }
+}
+
+/* body {
+    background-color: #FFB9B9!important;
+} */
+.inherit{
+    color: #fff!important;
+    font-size: 1px;
+}
+
+
+
+/* custome rangw slider  */
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 5px;
+    border-radius: 5px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+  }
+  
+  .slider:hover {
+    opacity: 1;
+  }
+  
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #32AEE3;
+    cursor: pointer;
+  }
+  
+  .slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #32AEE3;
+    cursor: pointer;
+  }  
+  .nobullet li{
+      list-style: none;
+  }
+  .xindex {
+    z-index: 999999!important;
+}

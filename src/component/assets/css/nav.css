@@ -1,0 +1,66 @@
+.nav {
+    /* main nav  */
+    padding: 1em;
+    background:#FAFAFA;
+    width: 100vw;
+}
+.nav .navContent {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+.containerNav {
+    display: block;
+    /* position: fixed;
+    right: 1em;
+    top: 1em; */
+    background: #32AEE3;
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 0.7em;
+    transition: transform 0.5s ease-in;
+  }
+ 
+  .bar1,.bar3 {
+    width: 30px;
+    height: 5px;
+    background-color: #FAFAFA;
+    margin: 6px 0;
+    transition: all 0.5s ease-in-out;
+    /* transition-delay: 0.5s!important; */
+  }
+
+
+
+
+
+
+
+  .change .bar1 {
+    -webkit-transform: scalex(0) scaleY(0);
+    transform: scalex(0) scaleY(0);
+    transition-delay: 0!important;
+  }
+  
+  .scallly {
+      transform: scale(0.5);
+      /* transition-delay: 0.5s; */
+  }
+  .change .bar3 {
+    -webkit-transform: scalex(0) scaleY(0);
+    transform: scalex(0) scaleY(0);
+    /* transform: scaleY(0); */
+    /* width: 0%; */
+
+     transition-delay: 0!important;
+  }
+
+
+  .navt1 {
+      transition: all 0.3s ease-in-out;
+      /* opacity: 0; */
+      /* position: absolute; */
+      transform: translateY(-10%)!important;
+  }

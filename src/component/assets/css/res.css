@@ -1,0 +1,250 @@
+
+
+@media(min-width:1000px){ 
+    .fimg {
+        height: 30em!important;
+    }
+    .fh1 {
+        padding-top: 1.5em!important;
+    }
+  
+  }
+
+  
+@media(max-width:1000px){ 
+    .h1 {
+        font-size: 90px;
+    }
+    /* features  */
+    .ftp {
+        font-size: 27px;
+    }
+    .fth1 {
+        font-size: 40px;
+    }
+
+    .fbg {
+        height: 23em;
+    }
+
+}
+
+
+
+@media(max-width:770px){
+    .h1 {
+        font-size: 70px;
+    }
+    /* privacy policy   */
+       .ph1 {
+        font-size: 70px; 
+    }
+
+    .psub {
+        font-size: 30px;
+    }
+    .psub2 {
+        font-size: 28px;
+    }
+
+
+    /* general  */
+    .pt1 {
+        padding-top: 6em;
+    }
+}
+
+@media(max-width:740px){
+    .h1 {
+        font-size: 60px;
+    }
+    /* privacy policy   */
+    .pvimage {
+        width: 100%;
+    }
+       .ph1 {
+        font-size: 65px; 
+    }
+  
+
+}
+
+
+@media(max-width:600px){ 
+ 
+   .h1 {
+       font-size: 50px;
+   }
+   .py {
+    padding: 0.4em 0.7em!important;
+    font-size: 1em!important;
+    }
+    .py2 {
+        padding: 0.6em 0.6em!important;
+        font-size: 1em!important;
+    }
+
+    /* headings  */
+    .headings {
+        font-size: 40px;
+    }
+    .subHeadings {
+        font-size: 15px;
+    }
+
+    /* about  */
+    .ap {
+        font-size: 40px;
+        line-height: 44px;
+    }
+    /* how it works  */
+    .hiwp {
+        font-size: 27px;
+    }
+    
+    .hiwlists li {
+        font-size: 24px;
+    }
+    
+    /* general  */
+    .p {
+        font-size: 36px!important;
+    }
+
+    /* Privacy Policy  */
+    .ph1 {
+        font-size: 40px; 
+    }
+
+    .psub {
+        font-size: 23px;
+    }
+    .psub2 {
+        font-size: 20px;
+    }
+  
+
+      /* general  */
+      .pt1 {
+        padding-top: 4em;
+    }
+   
+}
+
+@media (max-width:447px){
+
+    /* text  */
+    .h1 {
+        font-size: 50px;
+    }
+    .h2 {
+        font-size: 40px;
+    } 
+    .headings {
+        font-size: 37px;
+    }
+    .subHeadings {
+        font-size: 14px;
+    }
+    .ap {
+        font-size: 34px;
+        line-height: 38px;
+    }
+
+    /* privacy policy  */
+    
+    .pvimage {
+        height: 60vh;
+    }
+}
+
+@media(max-width:380px){ 
+     /* features  */
+     .ftp {
+        font-size: 24px;
+    }
+    .fth1 {
+        font-size: 30px;
+    }
+
+   /* how it works  */
+    .hiwp {
+        font-size: 24px;
+    }
+    
+    .hiwlists li {
+        font-size: 22px;
+    }
+    .ap {
+        font-size: 25px;
+    }
+
+    /* privacy policy  */
+    .pvimage {
+        height: 50vh;
+    }
+}
+@media(max-width:350px){ 
+    .headings {
+        font-size: 35px;
+    }
+    .subHeadings {
+        font-size: 13px;
+    }
+    .ap {
+        font-size: 26px;
+        line-height: 30px;
+    }
+    .h1 {
+        font-size: 45px;
+    }
+
+    /* genral  */
+    .resicon {
+        width: 4em;
+    }
+     /* privacy policy  */
+     .pvimage {
+        height: 45vh;
+    }
+
+}
+  @media(max-width:330px){ 
+    .h1 {
+        font-size: 35px;
+    }
+    /* general  */
+    .headings {
+        font-size: 32px;
+    }
+      /* features  */
+      .ftp {
+        font-size: 22px;
+    }
+    .fth1 {
+        font-size: 27px;
+    }
+
+    /* Privacy policy  */
+    .pvimage {
+        height: 40vh;
+    }
+}
+@media(max-width:320px){ 
+    .py {
+        font-size: 0.9em!important;
+    }
+    .py2 {
+        font-size: 0.9em!important;
+    }
+
+      /* how it works  */
+      .hiwp {
+        font-size: 22px;
+    }
+    
+    .hiwlists li {
+        font-size: 18px;
+    }
+
+}

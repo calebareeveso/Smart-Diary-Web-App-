@@ -1,0 +1,207 @@
+
+@media(min-width:1000px){
+.tx {
+    transform: translateX(25%);
+}
+.desktopmd {
+    display: inline;
+
+}
+.desktopsm {
+    display: none!important;
+
+}
+
+
+}
+
+@media(max-width:1000px){
+    .desktopmd {
+    display: none;
+
+    }
+    .desktopsm {
+    display: inline!important;
+
+    }
+}
+
+/* @media(min-width:1998px){
+    .nomargin {
+        padding-left: 0%!important;
+    }
+}
+@media(min-width:1550px){
+    .nomargin {
+        padding-left: 1%;
+    }
+}
+@media(min-width:1150px){
+    .nomargin {
+        padding-left: 2%;
+    }
+} */
+@media(min-width:955px){
+    .nomargin {
+        padding-left: 2%!important;
+    }
+}
+@media(min-width:940px){
+    .nomargin {
+        padding-left: 3%;
+    }
+}
+@media(min-width:847px){
+    .nomargin {
+        padding-left: 4%;
+    }
+}
+
+@media(min-width:768px){
+    .nomargin {
+        padding-left: 5%;
+    }
+
+}
+@media(max-width:768px){
+    
+    .searchicon {
+        width: 2em;
+    }
+    .micon {
+        width: 3em;
+    }
+    .snav {
+        padding: 0.5em;
+    }
+
+    .navleft {
+        padding: 1.5em;
+        top: 15%;
+    }
+
+    /* font  */
+    .diaryname {
+        font-size: 45px;
+    }
+
+}
+@media(min-width:576px){
+    .nomargin {
+        margin-left: 3%!important;
+    }
+    .diaryname {
+        font-size: 48px;
+    }
+    .gap {
+       margin-left: 15%;
+    }
+    .desktop {
+        display: block!important;
+    }
+    .mobile {
+        display: none!important;
+    }
+    .lnav {
+        width: 1.7em;
+    }
+    .activitylogText {
+        font-size: 18px;
+    }
+}
+@media(max-width:576px){
+    .lnav {
+        width: 1.7em;
+    }
+    .ty {
+        transform: translateY(0%);
+    }
+    .searchicon {
+        padding-top: 0.1em;
+        margin-right: -1em;
+    }
+    /* .gap {
+        padding: 2.2em;
+     } */
+     .gap {
+        padding: 2em 1px;
+     }
+     .desktop {
+         display: none!important;
+     }
+     .mobile {
+        display: block!important;
+        z-index: 999999!important;
+    }
+  
+}
+@media(max-width:450px){
+    
+    .searchicon {
+        width: 1.5em;
+        padding-top: 0.1em;
+    }
+    .micon {
+        width: 2.5em;
+    }
+    .lnav {
+        width: 1.3em;
+    }
+    .snav {
+        padding: 0.2em;
+    }
+    .gap {
+        padding: 2em 1px;
+     }
+    .diaryname {
+        padding-top: 0.3em;
+        font-size: 30px;
+    }
+ 
+    
+}
+
+@media(max-width:330px){
+    .searchicon {
+        width: 1.3em;
+        padding-top: 0em;
+    }
+    .micon {
+        width: 2.3em;
+    }
+    .lnav {
+        width: 1.0em;
+    }
+    .snav {
+        padding: 0.1em;
+    }
+    .navleft {
+        padding: 1em;
+    }
+    .diaryname {
+        padding-top: 0.4em;
+        font-size: 25px;
+    }
+  
+}
+
+.none1 {
+    display: none!important;
+}
+
+
+@media(min-width:580px){
+    .micon {
+        width: 1.5em!important;
+    }
+    .lnav {
+        width: 1.4em!important;
+    }
+    .diaryname {
+        font-size: 33px;
+        transform: translateY(5%);
+    }
+    .ty {
+        transform: translateY(1%);
+    }
+}
