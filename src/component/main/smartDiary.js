@@ -37,7 +37,7 @@ import n4 from '../assets/img/n4.svg'
 import lg from '../assets/img/logout.svg'
 
 // Images 
-import EmptyImg from '../assets/img/empty.png'
+// import EmptyImg from '../assets/img/empty.png'
 
 
 // modal 
@@ -154,14 +154,14 @@ export default class smartDiary extends Component {
         //   document.getElementById("emptyimg").classList.add('show1')
         //   document.getElementById("preloader").classList.add('none1')
         //  }
-        setTimeout(() => {
+        // setTimeout(() => {
             
-              document.getElementById("emptyimg").classList.add('show1')
-            // document.querySelectorAll(".nothinghere").classList.add('show1')
-            document.getElementById("preloader").classList.add('none1')
-        }, 4000);
+        //       document.getElementById("emptyimg").classList.add('show1')
+        //     // document.querySelectorAll(".nothinghere").classList.add('show1')
+        //     document.getElementById("preloader").classList.add('none1')
+        // }, 4000);
         
-        document.querySelector(".nothinghere").style.display ='none'
+        // document.querySelector(".nothinghere").style.display ='none'
    }
 
 
@@ -1370,7 +1370,7 @@ export default class smartDiary extends Component {
                             
   
                           <>
-                     <div className="text-center nothinghere"  id='emptyimg' style={{width:'100vh',heigth:'20vh'}}>
+                     {/* <div className="text-center nothinghere"  id='emptyimg' style={{width:'100vh',heigth:'20vh'}}>
                        <img src={EmptyImg} alt='' style={{width:'20em',heigth:'100%',paddingTop:'3em'}}></img>
                      </div>
   
@@ -1379,7 +1379,7 @@ export default class smartDiary extends Component {
                                  <div class="spinner-border text-primary" role="status">
                                   <span class="sr-only">Loading...</span>
                               </div>
-                            </div>
+                            </div> */}
                           </>
                       
   
