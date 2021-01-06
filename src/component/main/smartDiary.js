@@ -161,24 +161,24 @@ export default class smartDiary extends Component {
 
         }, 5000);
         
+
+    setTimeout(() => {
+
+        if(this.state.userData.length === 0){
+            setTimeout(() => {
+              document.getElementById("moveto1").style.display = "inline";
+              document.getElementById("moveto2").classList.add('none1')
+            }, 3000);
+        }else {
+              document.getElementById("moveto1").style.display = "inline";
+              document.getElementById("moveto2").classList.add('none1')
+        }
+    }, 2000);
+
+        
    }
 
 
-//    rangev1(e,span){
-//       const rtext= document.getElementById(span);
-//       let rangev = document.getElementById(e);
-
-     
-//        rtext.innerHTML = rangev.value 
-//     //   console.log(rangev)
-//       this.setState({
-//         rangeh5:rangev.value+10,
-//         rangep:rangev.value,
-//       })
-
-//       console.log(this.state.rangep)
-//     //   console.log(rangev.value)
-//    }
     
    OnAlert(){
     
@@ -1192,7 +1192,13 @@ export default class smartDiary extends Component {
                     </IconButton>
                     
 
-                    <IconButton  color="primary" aria-label="add" style={{outline:"none"}} id='moveto1' className='d-none d-sm-inline mx-1' onClick={this.addD}>
+                    <IconButton  color="primary" aria-label="add" style={{outline:"none",display:'none'}} id='moveto1' className=' mx-1' onClick={this.addD}>
+                    <img src={grid}  alt='' className=' py-1 lnav'></img>
+                    </IconButton>
+                    {/* <IconButton  color="primary" aria-label="add" style={{outline:"none",display:'none'}} id='moveto1' className='d-none d-sm-inline mx-1' onClick={this.addD}>
+                    <img src={grid}  alt='' className=' py-1 lnav'></img>
+                    </IconButton> */}
+                    <IconButton  color="primary" aria-label="add" style={{outline:"none"}} id='moveto2' className='d-inline mx-1' >
                     <img src={grid}  alt='' className=' py-1 lnav'></img>
                     </IconButton>
                 </div>
