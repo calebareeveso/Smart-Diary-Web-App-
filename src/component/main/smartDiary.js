@@ -1162,9 +1162,15 @@ export default class smartDiary extends Component {
 
 
                 {/* mobile burger  */}
-                <IconButton  color="primary" aria-label="Menu" style={{outline:"none"}} onClick={this.mobileNav} className='mobile searchy'>
+                {/* <IconButton  color="primary" aria-label="Menu" style={{outline:"none"}} onClick={this.mobileNav} className='mobile mb-1 searchy my-2 ml-3'>
 
-                <img src={menu} className='px-3 micon' alt='' ></img>
+                <img src={menu} className='px-1 micon py-1 ' alt='' ></img>
+
+                </IconButton> */}
+
+                <IconButton  color="primary" aria-label="Menu" style={{outline:"none"}} onClick={this.mobileNav} className='mobile searchy ml-3 searchy '>
+
+                <img src={menu} className='px-1 micon' style={{width:"1.6em"}} alt='' ></img>
 
                 </IconButton>
                 {/* mobile burger ends */}
