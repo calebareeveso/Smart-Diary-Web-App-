@@ -37,7 +37,7 @@ import n4 from '../assets/img/n4.svg'
 import lg from '../assets/img/logout.svg'
 
 // Images 
-// import EmptyImg from '../assets/img/empty.png'
+import EmptyImg from '../assets/img/empty.png'
 
 
 // modal 
@@ -147,21 +147,20 @@ export default class smartDiary extends Component {
        }
 
       
-        //  if(this.state.userData.length === 0 && localStorage.getItem('Clear__emptyImg')){
-        //      document.getElementById("emptyimg").classList.add('none1')
-        //    document.getElementById("preloader").classList.add('show1')
-        //  }else {
-        //   document.getElementById("emptyimg").classList.add('show1')
-        //   document.getElementById("preloader").classList.add('none1')
-        //  }
-        // setTimeout(() => {
+
+        setTimeout(() => {
             
-        //       document.getElementById("emptyimg").classList.add('show1')
-        //     // document.querySelectorAll(".nothinghere").classList.add('show1')
-        //     document.getElementById("preloader").classList.add('none1')
-        // }, 4000);
+            //   document.getElementById("emptyimg").classList.add('show1')
+            // document.getElementById("preloader").classList.add('none1')
+            
+            if(this.state.userData.length === 0){
+                  document.getElementById("emptyimg").classList.add('show1')
+                  document.getElementById("preloader").classList.add('none1')
+         }
+
+
+        }, 7000);
         
-        // document.querySelector(".nothinghere").style.display ='none'
    }
 
 
@@ -323,7 +322,7 @@ export default class smartDiary extends Component {
 
     createLog(e){
         const time = document.getElementById('clock').innerHTML
-        const viewinfo = `${time} you created a new page -${e}`;
+        const viewinfo = `${time} you created-${e}`;
         console.log(viewinfo)
 
        this.setActivityLog(viewinfo)
@@ -331,14 +330,14 @@ export default class smartDiary extends Component {
 
     updatelog(e){
         const time = document.getElementById('clock').innerHTML
-        const viewinfo = `${time} you edited page -${e} `;
+        const viewinfo = `${time} you edited-${e} `;
        console.log(viewinfo)
 
        this.setActivityLog(viewinfo)
     }
     Delatelog(e){
         const time = document.getElementById('clock').innerHTML
-        const viewinfo = `${time} you delated page -${e} `;
+        const viewinfo = `${time} you delated-${e} `;
        console.log(viewinfo)
 
        this.setActivityLog(viewinfo)
@@ -852,6 +851,7 @@ export default class smartDiary extends Component {
 
     addPages() {
 
+        document.getElementById("emptyimg").classList.remove('show1')
         this.setState({
             newd:false,
            })
@@ -1363,14 +1363,15 @@ export default class smartDiary extends Component {
                                       <small className='grayme'>{user.time}</small>
                                   </div>
                                  </div>
-                                </div>)) 
+                                </div>
+                                )) 
                                 
                                 : 
   // emptyImg
                             
   
                           <>
-                     {/* <div className="text-center nothinghere"  id='emptyimg' style={{width:'100vh',heigth:'20vh'}}>
+                     <div className="text-center nothinghere "  id='emptyimg' style={{width:'100vh',heigth:'20vh',display:'none'}}>
                        <img src={EmptyImg} alt='' style={{width:'20em',heigth:'100%',paddingTop:'3em'}}></img>
                      </div>
   
@@ -1379,7 +1380,7 @@ export default class smartDiary extends Component {
                                  <div class="spinner-border text-primary" role="status">
                                   <span class="sr-only">Loading...</span>
                               </div>
-                            </div> */}
+                            </div>
                           </>
                       
   
@@ -1670,7 +1671,7 @@ export default class smartDiary extends Component {
             {/* <Button variant="contained" color="secondary" onClick={this.closeD} className='nob'>
                 Close
             </Button> */}
-            <Button variant="contained" color="primary" onClick={this.UpdatePages} style={{color: "#000"}} className='nob'>
+            <Button variant="contained" color="primary" onClick={this.UpdatePages} style={{color: "#FFF"}} className='nob'>
                 Save Changes
             </Button>
             
@@ -1702,7 +1703,7 @@ export default class smartDiary extends Component {
             {/* <Button variant="contained" color="secondary" onClick={this.closeD} className='nob'>
                 Close
             </Button> */}
-            <Button variant="contained" color="primary" onClick={this.addPages} style={{color: "#000"}} className='nob'>
+            <Button variant="contained" color="primary" onClick={this.addPages} style={{color: "#FFF"}} className='nob'>
                 Save Changes
             </Button>
             </Modal.Footer>
