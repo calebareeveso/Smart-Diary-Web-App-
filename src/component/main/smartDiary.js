@@ -159,7 +159,7 @@ export default class smartDiary extends Component {
          }
 
 
-        }, 7000);
+        }, 5000);
         
    }
 
