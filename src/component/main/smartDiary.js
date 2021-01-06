@@ -796,7 +796,7 @@ export default class smartDiary extends Component {
        let m3 = document.querySelectorAll('.m3')
        let m4 = document.querySelectorAll('.m4')
  
-    // document.getElementById("moveto1").click();
+    
 
         setTimeout(() => {
             document.getElementById('dtitle').focus()
