@@ -1680,9 +1680,6 @@ export default class smartDiary extends Component {
             <textarea className='nob' style={{width:"100%",ouline:'none',border:'0'}} id="updatetext" cols="30" rows="10"></textarea>
              </Modal.Body>
             <Modal.Footer className='d-flex justify-content-center' style={{border:'0'}}>
-            {/* <Button variant="contained" color="secondary" onClick={this.closeD} className='nob'>
-                Close
-            </Button> */}
             <Button variant="contained" color="primary" onClick={this.UpdatePages} style={{color: "#FFF"}} className='nob'>
                 Save Changes
             </Button>
