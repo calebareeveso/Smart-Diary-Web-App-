@@ -151,7 +151,7 @@
     transform: translateX(-100%);
     transition: all 0.5s ease-in-out;
     background: #fff!important;
-    z-index: 999!important;
+    z-index: 8!important;
     left: -100%;
     top: 0;
 }

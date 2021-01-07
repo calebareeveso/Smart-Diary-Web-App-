@@ -207,7 +207,7 @@
 }
 
 .zindex {
-    z-index: -1!important;
+    z-index: 9!important;
 }
 .zindexmain {
     z-index: 999999999!important;
