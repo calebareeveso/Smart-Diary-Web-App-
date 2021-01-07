@@ -39,7 +39,7 @@ export default class home extends Component {
 
                     
                          <div className='pr-sm-3 mt-sm-3 mt-3 pt-5 pt-sm-1'>
-                         <p className='h1 dblue  mt-sm-5 mb-4 pt-sm-5'>Your secrete is <br className='d-none d-sm-block'></br> safe in web
+                         <p className='h1 dblue  mt-sm-5 mb-4 pt-sm-5'>Your secrete is <br className='d-none d-sm-block'></br> safe in the web
 
 </p>
                           <div className='pt-3'>
