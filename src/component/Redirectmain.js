@@ -27,10 +27,7 @@ import './assets/css/loader.css'
 
 
     componentDidMount(){
-        setTimeout(() => {
-        //    document.getElementById('btn').style.display= 'block'
         this.redirection()
-        }, 7500);
     }
 
 
@@ -38,7 +35,7 @@ import './assets/css/loader.css'
         setTimeout(() => {
             this.setState({redirect: true})
             
-        }, 2000);
+        }, 50);
     }
     render() {
 
@@ -51,28 +48,10 @@ import './assets/css/loader.css'
                  null
             }
 
-            {/* <button id='btn' style={{display:'none'}} className='' onClick={this.redirection}>Open {localStorage.getItem('DiaryName')}</button> */}
-          
-           <div className="container">
-           <div className="d-flex justify-content-center align-items-center text-center" style={{height:'100vh'}}>
-        
-            <div className="container">
-            <div class="spinner-border text-primary" role="status">
-                <span class="sr-only">Loading...</span>
-            </div>
-            <div id="caseGrise">
-            <div id="progress">
-                <div id="charge"></div>
-            </div>
-            <div id="load">
-                {/* <p>loading</p> */}
-            </div>
-            </div>
-
+           <div>
+                {/* empty */}
            </div>
-            </div>
            </div>
-            </div>
             
         )
     }
