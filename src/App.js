@@ -3,7 +3,6 @@ import './App.css';
 import Home from './component/home'
 import LogIn from './component/Auth/login'
 import Signup from './component/Auth/sigup'
-import Privacy from './component/privacy'
 import Redirect from './component/redirect'
 import {BrowserRouter as Router, Switch ,Route } from 'react-router-dom';
 
@@ -108,7 +107,6 @@ class App extends Component {
        <Route path='/' exact={true} component={Home} />
        <Route path='/login'  component={LogIn} />
        <Route path='/signup'  component={Signup} />
-       <Route path='/privacy-policy'  component={Privacy} />
        </Switch>
 
        }
