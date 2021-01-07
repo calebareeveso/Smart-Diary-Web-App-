@@ -14,15 +14,6 @@ import fire from './config/fire'
 
 class App extends Component {
 
-
-
-
-
-
-
-
-
-
   constructor() {
     super();
     this.state = ({
