@@ -54,23 +54,6 @@ export default class home extends Component {
                            
                            </div>
                          </div>
-
-                         {/* <div className="d-flex justify-content-center"> */}
-                         
-                         {/* <h2>   Opening {localStorage.getItem('DiaryName') ? localStorage.getItem('DiaryName') : <span>Diary...</span> }</h2> */}
-                         {/* <div class="spinner-border text-primary spinner-border-lg" role="status">
-                        <span class="sr-only">Loading...</span>
-                        </div>
-                        </div>
-                         <div id="caseGrise">
-            <div id="progress">
-                <div id="charge"></div>
-            </div>
-            <div id="load"> */}
-                {/* <p>loading</p> */}
-            {/* </div>
-            </div> */}
-
                      
 
                 </div>
