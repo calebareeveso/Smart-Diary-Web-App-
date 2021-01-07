@@ -4,6 +4,7 @@ import Home from './component/home'
 import LogIn from './component/Auth/login'
 import Signup from './component/Auth/sigup'
 import Redirect from './component/redirect'
+import Redirectmain from './component/redirectmain'
 import {BrowserRouter as Router, Switch ,Route } from 'react-router-dom';
 
 import Main from './component/main/smartDiary'
@@ -100,7 +101,7 @@ class App extends Component {
        <Route path='/login'  component={Redirect} />
        <Route path='/signup'  component={Redirect} />
        <Route path='/privacy-policy'  component={Redirect} />
-       <Route path="*" component={Main} />
+       <Route path="*" component={Redirectmain} />
        
         {/* Redirect ends */}
        </Switch>
