@@ -49,7 +49,9 @@ import './assets/css/loader.css'
             }
 
            <div>
-               {/* nothing here  */}
+
+               {/* empty */}
+
            </div>
            </div>
             
