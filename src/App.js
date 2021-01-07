@@ -91,7 +91,7 @@ class App extends Component {
        <Route path='/login'  component={Redirect} />
        <Route path='/signup'  component={Redirect} />
        <Route path='/privacy-policy'  component={Redirect} />
-       <Route path='*' component={Redirectmain} />
+       <Route component={Redirectmain} />
        
         {/* Redirect ends */}
        </Switch>
@@ -102,7 +102,7 @@ class App extends Component {
        <Route path='/' exact={true} component={Home} />
        <Route path='/login'  component={LogIn} />
        <Route path='/signup'  component={Signup} />
-       <Route path='*' component={Home} />
+       <Route component={Home} />
        </Switch>
 
        }
