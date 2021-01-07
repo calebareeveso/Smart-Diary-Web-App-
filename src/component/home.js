@@ -28,22 +28,13 @@ export default class home extends Component {
 
     }
     render() {
-    //    const  features = [
-    //         {img: F1, heading: 'Authentication', text:'We ensure that only you can access your diary'},
-    //         {img : F2, heading: 'Customization', text:'We make sure you are able to customize your diary to your satistfaction'},
-    //         {img : F3, heading: 'Storage', text:'We provide a web base storage where all your data will be kept'},
-    //         {img : F4, heading: 'Activity Log', text:'We show you all your activities...like what you view , what you edited etc'},
-    //     ]
+
         return (
             <>
             <Nav/>
 
             <div className='herobg'>
                  <div className='container pt-5'>
-                     {/* <div className='text-center'>
-                    <img src={mHero} alt='' className='col-lg-6 pt-3 pt-sm-0 d-block d-sm-none' style={{width:'100%',heigth:'5vh'}}></img>
-
-                     </div> */}
 
 
                     
