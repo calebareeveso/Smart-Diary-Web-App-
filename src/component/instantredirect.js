@@ -8,7 +8,7 @@ import {Redirect,withRouter } from 'react-router-dom';
 import './assets/css/loader.css'
 
 
- class redirect extends Component {
+ class instantredirect extends Component {
 
 
     constructor(){
@@ -59,4 +59,4 @@ import './assets/css/loader.css'
     }
 }
 
-export default withRouter(redirect); 
+export default withRouter(instantredirect); 
