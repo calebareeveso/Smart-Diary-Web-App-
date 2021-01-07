@@ -4,7 +4,7 @@ import Home from './component/home'
 import LogIn from './component/Auth/login'
 import Signup from './component/Auth/sigup'
 import Redirect from './component/redirect'
-import Redirectmain from './component/redirectmain'
+import Redirectmain from './component/Redirectmain'
 import {BrowserRouter as Router, Switch ,Route } from 'react-router-dom';
 
 import Main from './component/main/smartDiary'
