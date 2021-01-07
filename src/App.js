@@ -57,7 +57,6 @@ class App extends Component {
     
 
       console.log(user);
-      // console.log(user.metadata.creationTime);
       if (user) {
         this.setState({ user });
         localStorage.setItem('user', user.uid);
