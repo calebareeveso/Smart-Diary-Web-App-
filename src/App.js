@@ -94,11 +94,15 @@ class App extends Component {
        {this.state.user ?
        <Switch>
         <Route path ='/diary' exact={true} component={Main} /> 
+        {/* Redirect */}
+
         <Route path='/' exact={true} component={Redirect} />
        <Route path='/login'  component={Redirect} />
        <Route path='/signup'  component={Redirect} />
        <Route path='/privacy-policy'  component={Redirect} />
-        {/* Redirect */}
+       <Route path="*" component={Main} />
+       
+        {/* Redirect ends */}
        </Switch>
 
        : 
