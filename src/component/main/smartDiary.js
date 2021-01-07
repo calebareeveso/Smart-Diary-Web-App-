@@ -1144,16 +1144,16 @@ export default class smartDiary extends Component {
 
                 <div className='d-none searchbg mb-sm-1'  id='searchbtn' style={{width:"100%"}}>
                  <div className='d-flex'>
-                 <input type="text" onInput={this.searchData1}  placeholder='Live Search here...' className='searchinputsm myInput1' />
-                 <img src={times} className='micon pr-2' alt='' onClick={this.searchhide}></img>
+                 <input type="text" onInput={this.searchData1}  placeholder='Live Search here...' className='searchinputsm myInput1 ' />
+                 <img src={times} className='micon pr-2 ' alt='' onClick={this.searchhide}></img>
                  </div>
                 </div>                
                 
 
                 {/* desktop burger  */}
-                <IconButton  color="primary" aria-label="Menu" style={{outline:"none"}} onClick={this.desktopNav} className='desktop mb-1 searchy my-2 ml-3'>
+                <IconButton  color="primary" aria-label="Menu" style={{outline:"none"}} onClick={this.desktopNav} className='desktop mb-1 searchy my-2 ml-3 zindex'>
 
-                <img src={menu} className='px-1 micon py-1 ' alt='' ></img>
+                <img src={menu} className='px-1 micon py-1 zindex' alt='' ></img>
 
                 </IconButton>
                 {/* desktop burger ends */}
@@ -1168,9 +1168,9 @@ export default class smartDiary extends Component {
 
                 </IconButton> */}
 
-                <IconButton  color="primary" aria-label="Menu" style={{outline:"none"}} onClick={this.mobileNav} className='mobile searchy ml-3 searchy '>
+                <IconButton  color="primary" aria-label="Menu" style={{outline:"none"}} onClick={this.mobileNav} className='mobile searchy ml-3 searchy zindex'>
 
-                <img src={menu} className='px-1 micon' style={{width:"1.6em"}} alt='' ></img>
+                <img src={menu} className='px-1 micon zindex' style={{width:"1.6em"}} alt='' ></img>
 
                 </IconButton>
                 {/* mobile burger ends */}
@@ -1670,7 +1670,7 @@ export default class smartDiary extends Component {
 
             {/* update diary  */}
 
-            <Modal show={this.state.updated} onHide={this.closeUpdate} centered size='lg' style={{border:'0'}} class="xindex">
+            <Modal show={this.state.updated} onHide={this.closeUpdate} centered size='lg' style={{border:'0'}} class="xindex zindexmain">
             <Modal.Header  style={{border:'0'}} closeButton>
             <Modal.Title>
             <input type="text" name="text"  id="updatetitle" className='nob' style={{width:"40vw",ouline:'none',border:'0',fontSize:'16px'}}  autofocus/>
@@ -1699,7 +1699,7 @@ export default class smartDiary extends Component {
 
 
             {/* add diary  */}
-                <Modal  show={this.state.newd} onHide={this.closeD} centered size='lg' style={{border:'0'}} class="xindex">
+                <Modal  show={this.state.newd} onHide={this.closeD} centered size='lg' style={{border:'0'}} class="xindex zindexmain">
             <Modal.Header  style={{border:'0'}} closeButton>
             <Modal.Title>
                <input  type="text" name="text" id="dtitle" className='nob' style={{width:"40vw",ouline:'none',border:'0',fontSize:'16px'}} placeholder='Title' autofocus/>
