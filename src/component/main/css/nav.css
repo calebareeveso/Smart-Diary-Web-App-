@@ -155,3 +155,10 @@
     left: -100%;
     top: 0;
 }
+
+
+@media(max-width:768px){
+    .navlogo {
+        width: 3em;
+    }
+}
