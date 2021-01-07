@@ -9,11 +9,6 @@ import Logo from './assets/img/p.svg'
 
 
 export default class nav extends Component {
-     componentDidMount(){
-       
-        // document.querySelector('.dot1').classList.add('active')
-        
-     }
 
 
 
@@ -39,7 +34,7 @@ export default class nav extends Component {
         return (
             <nav className='nav'>
                   <div>
-                <Link to='/'>  <img src={Logo} alt=""></img></Link>
+                <Link to='/'>  <img src={Logo} className='navlogo' alt=""></img></Link>
                   </div>
               
             </nav>
