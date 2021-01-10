@@ -5,6 +5,7 @@ import LogIn from './component/Auth/login'
 import Signup from './component/Auth/sigup'
 import Redirect from './component/redirect'
 import Redirectmain from './component/instantredirect'
+import Instantredirecthome from './component/instantredirecthome'
 import {BrowserRouter as Router, Switch ,Route } from 'react-router-dom';
 
 import Main from './component/main/smartDiary'
@@ -102,7 +103,7 @@ class App extends Component {
        <Route path='/' exact={true} component={Home} />
        <Route path='/login'  component={LogIn} />
        <Route path='/signup'  component={Signup} />
-       <Route component={Home} />
+       <Route component={Instantredirecthome} />
        </Switch>
 
        }
