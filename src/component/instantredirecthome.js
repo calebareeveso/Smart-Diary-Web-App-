@@ -35,7 +35,7 @@ import './assets/css/loader.css'
         setTimeout(() => {
             this.setState({redirect: true})
             
-        }, 50);
+        }, 2000);
     }
     render() {
 
@@ -43,7 +43,7 @@ import './assets/css/loader.css'
         return (
             <div >
                 {this.state.redirect ? 
-                <Redirect to={`diary#${localStorage.getItem('DiaryName')}`} />
+                <Redirect to="/" />
                  :
                  null
             }
